@@ -1,0 +1,30 @@
+h1,
+h2 {
+    font-family: 'Crete Round', serif;
+}
+
+p {
+    font-family: 'Lora', serif;
+}
+
+.logo {
+    width: 9vw;
+}
+
+.posicionarTexto {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.textoEnImagen {
+    position: absolute;
+    bottom: 0;
+    right: 30rem;
+    top: 2rem;
+    color: antiquewhite;
+}
+
+form {
+    background-color: rgb(204, 226, 160);
+}
