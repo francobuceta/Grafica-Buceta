@@ -1,3 +1,4 @@
+/* Estilos generales */
 h1,
 h2 {
     font-family: 'Crete Round', serif;
@@ -7,6 +8,11 @@ p {
     font-family: 'Lora', serif;
 }
 
+form {
+    background-color: rgb(204, 226, 160);
+}
+
+/* Clases */
 .logo {
     width: 9vw;
 }
@@ -20,11 +26,43 @@ p {
 .textoEnImagen {
     position: absolute;
     bottom: 0;
-    right: 30rem;
-    top: 2rem;
-    color: antiquewhite;
+    right: 50vw;
+    top: 10vw;
+    color: rgb(25, 21, 16);
 }
 
-form {
-    background-color: rgb(204, 226, 160);
+.textoInclinado {
+    transform: rotate(-12deg);
+}
+
+.colorFondo {
+    background-color: rgb(254, 251, 231);
+}
+
+/* Animaciones */
+i {
+    transition: transform 0.6s;
+}
+
+i:hover {
+    transform: scale(1.2);
+}
+
+nav ul li a:hover {
+    background-color: rgb(160, 188, 194);
+    transform: scale(1.2);
+}
+
+/* Media Queris */
+@media (max-width: 850px) {
+    .textoInclinado {
+        transform: none;
+    }
+
+    .textoEnImagen {
+        position: absolute;
+        bottom: 0;
+        right: 20vw;
+        top: 10vw;
+    }
 }
