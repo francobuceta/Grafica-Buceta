@@ -1,0 +1,36 @@
+/* Imagen fondo banner */
+
+$banners:(
+    index: url("../images/presentacion3.jpg") no-repeat,
+    servicios: url("../images/servicios.jpg") no-repeat,
+    portfolio: url("../images/portfolio.jpg") no-repeat,
+    nosotros: url("../images/nosotros.jpg") no-repeat,
+    contacto: url("../images/contacto.jpg") no-repeat,
+);
+
+@each $ban, $img in $banners {
+    .banner--#{$ban} {
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), $img;
+        background-size: 100% 100%;
+        color: white;
+        height: 500px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} 
+
+/* Animacion Redes */
+$redes:(
+    whatssap: rgb(21, 166, 21),
+    facebook: rgb(37, 123, 177),
+    instagram: rgb(221,42,123),
+);
+
+@each $btn, $coloracion in $redes {
+    .animacion--#{$btn}:hover {
+        color: $coloracion !important;
+        transform: scale(1.2);
+    } 
+} 

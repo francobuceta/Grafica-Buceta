@@ -1,68 +1,132 @@
-/* Estilos generales */
-h1,
-h2 {
-    font-family: 'Crete Round', serif;
-}
+/* Imagen fondo banner */
+.banner--index {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/presentacion3.jpg") no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
+.banner--servicios {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/servicios.jpg") no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.banner--portfolio {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/portfolio.jpg") no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.banner--nosotros {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/nosotros.jpg") no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.banner--contacto {
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/contacto.jpg") no-repeat;
+  background-size: 100% 100%;
+  color: white;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* Animacion Redes */
+.animacion--whatssap:hover {
+  color: #15a615 !important;
+  transform: scale(1.2); }
+
+.animacion--facebook:hover {
+  color: #257bb1 !important;
+  transform: scale(1.2); }
+
+.animacion--instagram:hover {
+  color: #dd2a7b !important;
+  transform: scale(1.2); }
+
+/* Estilos generales */
 p {
-    font-family: 'Lora', serif;
-}
+  font-family: 'Lora', serif; }
 
 form {
-    background-color: rgb(204, 226, 160);
-}
-
-/* Clases */
-.logo {
-    width: 9vw;
-}
-
-.posicionarTexto {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.textoEnImagen {
-    position: absolute;
-    bottom: 0;
-    right: 50vw;
-    top: 10vw;
-    color: rgb(25, 21, 16);
-}
-
-.textoInclinado {
-    transform: rotate(-12deg);
-}
-
-.colorFondo {
-    background-color: rgb(254, 251, 231);
-}
+  background-color: #cce2a0; }
 
 /* Animaciones */
 i {
-    transition: transform 0.6s;
-}
+  transition: transform 0.6s;
+  color: #505254; }
 
-i:hover {
-    transform: scale(1.2);
-}
+/* Clases */
+.fuenteH2 {
+  font-family: 'Crete Round', serif;
+  font-size: 2.3rem; }
 
-nav ul li a:hover {
-    background-color: rgb(160, 188, 194);
-    transform: scale(1.2);
-}
+.logo {
+  width: 9vw; }
 
-/* Media Queris */
-@media (max-width: 850px) {
-    .textoInclinado {
-        transform: none;
-    }
+.colorFondo {
+  background-color: #e6c577; }
 
-    .textoEnImagen {
-        position: absolute;
-        bottom: 0;
-        right: 20vw;
-        top: 10vw;
-    }
-}
+.btnGradiente {
+  background-image: linear-gradient(0.2deg, #efefd2 0%, #c1c6b3 100%); }
+  .btnGradiente .btnLetra {
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #1d1b1b; }
+
+.border-5 {
+  border-color: #e8a05d !important; }
+
+.text-center::after {
+  content: "";
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background: #000; }
+
+.subrayado {
+  position: relative; }
+
+.anchoCard {
+  width: 25rem; }
+
+.navbar-nav {
+  column-gap: 20px; }
+  .navbar-nav .nav-link {
+    position: relative;
+    display: inline-block; }
+    .navbar-nav .nav-link::after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      background: #151514;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .5s; }
+    .navbar-nav .nav-link:hover::after {
+      transform: scaleX(1);
+      transform-origin: left; }
