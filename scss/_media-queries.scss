@@ -1,0 +1,15 @@
+/* Media Queries*/
+@media (max-width: 948px) {
+    .col .justify-content-end {
+        justify-content: center!important;
+    } 
+}
+
+@media (max-width: 756px) {
+    .col ul {
+        justify-content: center!important;
+    }
+    .estiloEnlaces {
+        font-size: 0.8rem;
+    }
+}

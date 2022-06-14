@@ -62,81 +62,89 @@
         </section>
         
         <section>
-            <div class="row">
-                <div class="col">
-                    <h2 class="mt-4 subrayado text-center fuenteH2">Nuestros Servicios</h2>
+            <h2 class="mt-4 subrayado text-center fuenteH2">Nuestros Servicios</h2>
+        </section>
+
+        <section class="container-fluid">
+            <div class="row d-flex justify-content-evenly">
+                <div class="col-lg-4 col-md-6 col-sm-12 card border border-5 mt-5 anchoCard">
+                    <img src="./images/servicio1.jpg" class="card-img-top mt-2" alt="Menu">
+                    <div class="card-body">
+                        <h3 class="card-title">Creación y Diseño</h3>
+                        <p class="card-text">Te ofrecemos la creación de menús y folletos para tu comercio o emprendimiento.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card border border-5 mt-5 anchoCard">
+                    <img src="./images/servicio2.1.jpg" class="card-img-top mt-2" alt="Cumpleaños">
+                    <div class="card-body">
+                        <h3 class="card-title">Todo para tu cumple</h3>
+                        <p class="card-text">Podemos realizar toda la decoración de tu cumple con la temática que más te guste.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 card border border-5 mt-5 anchoCard">
+                    <img src="./images/service3.jpg" class="card-img-top mt-2" alt="Tarjeta personalizada">
+                    <div class="card-body">
+                        <h3 class="card-title">Tarjetas Personalizadas</h3>
+                        <p class="card-text">Realizamos tarjetas personales tanto digitales como impresas.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container-fluid d-flex justify-content-around flex-wrap">
-            <div class="card border border-5 mt-5 anchoCard">
-                <img src="./images/servicio1.jpg" class="card-img-top" alt="Menu">
-                <div class="card-body">
-                    <h3 class="card-title">Creación y Diseño</h3>
-                    <p class="card-text">Te ofrecemos la creación de menús y folletos para tu comercio o emprendimiento.</p>
-                </div>
-            </div>
-            <div class="card border border-5 mt-5 anchoCard">
-                <img src="./images/servicio2.1.jpg" class="card-img-top" alt="Cumpleaños">
-                <div class="card-body">
-                    <h3 class="card-title">Todo para tu cumple</h3>
-                    <p class="card-text">Podemos realizar toda la decoración de tu cumple con la temática que más te guste.</p>
-                </div>
-            </div>
-            <div class="card border border-5 mt-5 anchoCard">
-                <img src="./images/service3.jpg" class="card-img-top" alt="Tarjeta personalizada">
-                <div class="card-body">
-                    <h3 class="card-title">Tarjetas Personalizadas</h3>
-                    <p class="card-text">Realizamos tarjetas personales tanto digitales como impresas.</p>
-                </div>
-            </div>
+        <!--Botón-->
+        <section class="d-flex justify-content-center mt-5">
+            <button type="button" class="btn btnGradiente">
+                <a class="btn btnLetra" href="./pages/servicios.html" role="button">MÁS INFORMACIÓN</a>
+            </button>
         </section>
     </main>
 
-    <!--Botón-->
-    <div class="container d-flex justify-content-center mt-5">
-        <button type="button" class="btn btnGradiente">
-            <a class="btn btnLetra" href="./pages/servicios.html" role="button">MÁS INFORMACIÓN</a>
-        </button>
-    </div>
+    <footer class="container-fluid colorFondo">
+        <div class="row d-flex justify-content-evenly align-items-center py-3 px-5 border-top">
+            <div class="col">
+                <ul class="nav list-unstyled d-flex flex-nowrap mx-3">
+                    <li class="ms-3">
+                        <a href="https://www.facebook.com/ojosventanalgraf" target="_blank">
+                            <i class="fa-brands fa-facebook fa-3x animacion--facebook"></i>
+                        </a>
+                    </li>
+                    <li class="ms-3"> 
+                        <a href="https://www.instagram.com/ojosventanal_graf/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-3x animacion--instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>    
 
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 px-5 mt-4 border-top colorFondo">
-        <ul class="nav col-md-4 list-unstyled d-flex mx-3">
-            <li class="ms-3">
-                <a href="http://www.facebook.com" target="_blank">
-                    <i class="fa-brands fa-facebook fa-3x animacion--facebook"></i>
-                </a>
-            </li>
-            <li class="ms-3"> 
-                <a href="http://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram fa-3x animacion--instagram"></i>
-                </a>
-            </li>
-        </ul>
+            <div class="col">
+                <ul class="nav d-flex flex-nowrap align-items-center">
+                    <li class="nav-item mb-2 bordeLi">
+                        <a href="index.html" class="nav-link estiloEnlaces">Home</a>
+                    </li>
+                    <li class="nav-item mb-2 bordeLi">
+                        <a href="./pages/servicios.html" class="nav-link estiloEnlaces">Servicios</a>
+                    </li>
+                    <li class="nav-item mb-2 bordeLi">
+                        <a href="./pages/portfolio.html" class="nav-link estiloEnlaces">Portfolio</a>
+                    </li>
+                    <li class="nav-item mb-2 bordeLi">
+                        <a href="./pages/nosotros.html" class="nav-link estiloEnlaces">Nosotros</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a href="./pages/contacto.html" class="nav-link estiloEnlaces">Contacto</a>
+                    </li>
+                </ul>
+            </div>
 
-        <div class="d-flex flex-column">
-            <h4>Navegación</h4>
-            <ul class="nav col-md-4 flex-column">
-                <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-muted">Home</a>
-                </li>
-                <li class="nav-item mb-2"><a href="./pages/servicios.html" class="nav-link p-0 text-muted">Servicios
-                    </a></li>
-                <li class="nav-item mb-2"><a href="./pages/portfolio.html" class="nav-link p-0 text-muted">Portfolio
-                    </a></li>
-                <li class="nav-item mb-2"><a href="./pages/nosotros.html" class="nav-link p-0 text-muted">Nosotros
-                    </a></li>
-                <li class="nav-item mb-2"><a href="./pages/contacto.html" class="nav-link p-0 text-muted">Contacto
-                    </a></li>
-            </ul>
-        </div>
-
-        <div class="col-md-4 d-flex align-items-center justify-content-end mx-4">
-            <a href="http://www.whatsapp.com" target="_blank" class="mx-3">
-                <i class="fa-brands fa-whatsapp fa-3x animacion--whatssap"></i>
-            </a>
-            <span>2266-639687</span>
-        </div>
+            <div class="col">
+                <div class="d-flex align-items-center justify-content-end mx-4">
+                    <a href="https://api.whatsapp.com/send?phone=5492266639687" target="_blank" class="mx-3">
+                        <i class="fa-brands fa-whatsapp fa-3x animacion--whatssap"></i>
+                    </a>
+                    <span>2266-639687</span>
+                </div>
+            </div>
+        </div>    
     </footer>
 
     <!--Script Bootstrap e Iconos Redes-->

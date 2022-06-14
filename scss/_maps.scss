@@ -1,16 +1,15 @@
 /* Imagen fondo banner */
-
 $banners:(
     index: url("../images/presentacion3.jpg") no-repeat,
-    servicios: url("../images/servicios.jpg") no-repeat,
-    portfolio: url("../images/portfolio.jpg") no-repeat,
+    servicios: url("../images/markus.jpg") no-repeat,
+    portfolio: url("../images/portfolio2.jpg") no-repeat,
     nosotros: url("../images/nosotros.jpg") no-repeat,
     contacto: url("../images/contacto.jpg") no-repeat,
 );
 
 @each $ban, $img in $banners {
     .banner--#{$ban} {
-        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), $img;
+        background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(97, 99, 107, 0.75)), $img;
         background-size: 100% 100%;
         color: white;
         height: 500px;

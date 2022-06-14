@@ -1,6 +1,7 @@
+@charset "UTF-8";
 /* Imagen fondo banner */
 .banner--index {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/presentacion3.jpg") no-repeat;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(97, 99, 107, 0.75)), url("../images/presentacion3.jpg") no-repeat;
   background-size: 100% 100%;
   color: white;
   height: 500px;
@@ -10,7 +11,7 @@
   align-items: center; }
 
 .banner--servicios {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/servicios.jpg") no-repeat;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(97, 99, 107, 0.75)), url("../images/markus.jpg") no-repeat;
   background-size: 100% 100%;
   color: white;
   height: 500px;
@@ -20,7 +21,7 @@
   align-items: center; }
 
 .banner--portfolio {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/portfolio.jpg") no-repeat;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(97, 99, 107, 0.75)), url("../images/portfolio2.jpg") no-repeat;
   background-size: 100% 100%;
   color: white;
   height: 500px;
@@ -30,7 +31,7 @@
   align-items: center; }
 
 .banner--nosotros {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/nosotros.jpg") no-repeat;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(97, 99, 107, 0.75)), url("../images/nosotros.jpg") no-repeat;
   background-size: 100% 100%;
   color: white;
   height: 500px;
@@ -40,7 +41,7 @@
   align-items: center; }
 
 .banner--contacto {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url("../images/contacto.jpg") no-repeat;
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(97, 99, 107, 0.75)), url("../images/contacto.jpg") no-repeat;
   background-size: 100% 100%;
   color: white;
   height: 500px;
@@ -63,13 +64,21 @@
   transform: scale(1.2); }
 
 /* Estilos generales */
+h1,
+h2 {
+  font-family: 'Open Sans', sans-serif; }
+
 p {
   font-family: 'Lora', serif; }
 
 form {
-  background-color: #cce2a0; }
+  background-color: #c8cebb; }
 
-/* Animaciones */
+main {
+  background-color: rgba(251, 224, 149, 0.591);
+  padding-bottom: 60px; }
+
+/* Animacion icono redes */
 i {
   transition: transform 0.6s;
   color: #505254; }
@@ -85,17 +94,59 @@ i {
 .colorFondo {
   background-color: #e6c577; }
 
+.border-5 {
+  border-color: #514c4c !important; }
+
+.anchoCard {
+  width: 22rem; }
+
+.centrarIcono {
+  display: block;
+  margin: auto;
+  padding: 10px; }
+
+.estiloEnlaces {
+  text-decoration: none;
+  color: #151514; }
+  .estiloEnlaces:hover {
+    color: #151514;
+    background-color: white; }
+
+.bordeLi {
+  border-right: 1px solid #151514; }
+
+.fondoParrafo {
+  background-color: #efe4ae; }
+
+.alturaFoto {
+  height: 550px; }
+
+/* Botones negros Prev y Next de Carrousel */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e") !important; }
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important; }
+
+/* Animaciones */
+/* Botón */
 .btnGradiente {
-  background-image: linear-gradient(0.2deg, #efefd2 0%, #c1c6b3 100%); }
+  background-image: linear-gradient(0.2deg, #efefd2 0%, #c1c6b3 100%);
+  box-shadow: 5px 5px 0px #1d1b1b; }
   .btnGradiente .btnLetra {
     font-family: sans-serif;
     font-weight: 700;
     color: #1d1b1b; }
+  .btnGradiente:hover {
+    box-shadow: 0px 0px 0px #151514;
+    cursor: pointer;
+    transform: translateX(5px) translateY(5px); }
 
-.border-5 {
-  border-color: #e8a05d !important; }
+/* Subrayado en h2 */
+.subrayado {
+  position: relative; }
 
-.text-center::after {
+.subrayado::after {
   content: "";
   transform: translateX(-50%);
   left: 50%;
@@ -105,12 +156,7 @@ i {
   height: 1px;
   background: #000; }
 
-.subrayado {
-  position: relative; }
-
-.anchoCard {
-  width: 25rem; }
-
+/* Subrayado en navbar */
 .navbar-nav {
   column-gap: 20px; }
   .navbar-nav .nav-link {
@@ -130,3 +176,38 @@ i {
     .navbar-nav .nav-link:hover::after {
       transform: scaleX(1);
       transform-origin: left; }
+
+/* Transición titulo */
+section div h1,
+h1 + h2 {
+  -webkit-animation: tracking-in-expand 1.1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 1.1s cubic-bezier(0.215, 0.61, 0.355, 1) both; }
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    opacity: 1; } }
+
+/* Media Queries*/
+@media (max-width: 948px) {
+  .col .justify-content-end {
+    justify-content: center !important; } }
+
+@media (max-width: 756px) {
+  .col ul {
+    justify-content: center !important; }
+  .estiloEnlaces {
+    font-size: 0.8rem; } }

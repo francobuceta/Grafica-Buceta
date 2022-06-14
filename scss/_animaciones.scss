@@ -1,0 +1,92 @@
+/* Animaciones */
+
+/* Botón */
+.btnGradiente {
+    background-image: linear-gradient( 0.2deg, rgb(239,239,210) 0%, rgb(193,198,179) 100%);
+    box-shadow: 5px 5px 0px rgb(29, 27, 27);
+    .btnLetra {
+        font-family: sans-serif;
+        font-weight: 700;
+        color: rgb(29, 27, 27);
+    }
+    &:hover {
+        box-shadow: 0px 0px 0px $color-negro;
+        cursor: pointer;
+        transform: translateX(5px) translateY(5px);
+    }
+}
+
+/* Subrayado en h2 */
+.subrayado {
+    position: relative;
+}
+
+.subrayado::after {
+    content:"";
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 0;
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background: #000;
+}
+
+/* Subrayado en navbar */
+.navbar-nav {
+    column-gap: 20px;
+    .nav-link {
+        position: relative;
+        display: inline-block;
+        &::after {
+            content: "";
+            height: 3px;
+            width: 100%;
+            background: $color-negro;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform .5s;
+        }    
+        &:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    }
+}
+
+/* Transición titulo */
+section div h1,
+h1 + h2 {
+    -webkit-animation: tracking-in-expand 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 1.1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@-webkit-keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
