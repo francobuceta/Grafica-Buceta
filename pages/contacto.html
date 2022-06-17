@@ -55,45 +55,46 @@
     </header>
 
     <main>
+        <!--Banner-->
         <section class="container-fluid banner--contacto">
             <div>
-                <h1>CONTACTO</h1>
+                <h1 class="sombra-titulo">CONTACTO</h1>
             </div>
         </section> 
-
+        
+        <!--Titulo-->
         <section>
             <h2 class="mt-5 subrayado text-center fuenteH2">¡Comunicate con nosotros!</h2>
         </section>
         
         <!--Formulario-->
-        <form class="container mt-5 border border-secondary rounded">
+        <form class="container mt-5 border border-secondary rounded" action="https://formspree.io/f/xbjwbwvl" method="POST">
             <div class="row">
                 <div class="col mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="nombre">
+                    <input type="text" class="form-control" id="exampleFormControlInput1" name="Nombre" placeholder="nombre">
                 </div>
                 <div class="col mb-3">
                     <label for="exampleFormControlInput2" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="apellido">
+                    <input type="text" class="form-control" id="exampleFormControlInput2" name="Apellido" placeholder="apellido">
                 </div>
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput3" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="nombre@ejemplo.com">
+                <input type="email" class="form-control" id="exampleFormControlInput3" name="E-mail" placeholder="nombre@ejemplo.com">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput4" class="form-label">Motivo</label>
-                <input type="text" class="form-control" id="exampleFormControlInput4" placeholder="motivo de consulta">
+                <input type="text" class="form-control" id="exampleFormControlInput4" name="Motivo" placeholder="motivo de consulta">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlTextarea5" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="exampleFormControlTextarea5" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea5" name="Mensaje" rows="3"></textarea>
             </div>
             <div class="mb-3">
                 <input type="submit" value="Enviar" class="btn btn-secondary py-2 px-4 text-white">
             </div>
         </form>
-
     </main>
 
     <footer class="container-fluid colorFondo">
@@ -138,7 +139,7 @@
                     <a href="https://api.whatsapp.com/send?phone=5492266639687" target="_blank" class="mx-3">
                         <i class="fa-brands fa-whatsapp fa-3x animacion--whatssap"></i>
                     </a>
-                    <span>2266-639687</span>
+                    <span class="fw-bold">2266-639687</span>
                 </div>
             </div>
         </div>    

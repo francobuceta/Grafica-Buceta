@@ -1,5 +1,12 @@
 /* Media Queries*/
-@media (max-width: 948px) {
+@media (max-width: 988px) {
+    div[data-info~="responsive"] {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 953px) {
     .col .justify-content-end {
         justify-content: center!important;
     } 
@@ -8,6 +15,7 @@
 @media (max-width: 756px) {
     .col ul {
         justify-content: center!important;
+        margin-bottom: 1rem;
     }
     .estiloEnlaces {
         font-size: 0.8rem;
